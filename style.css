@@ -4,22 +4,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #f0f2f5;
+}
 
 .facebook-wrapper {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
   display: flex;
-  padding: 10rem;
-  background-color: #f0f2f5;
+  width: 70%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10rem 0rem;
   font-family: "Nunito Sans", sans-serif;
 }
 .facebook-left {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  max-width: 70%;
-  padding: 0 5rem;
+  width: 50%;
 }
 .facebook-left h1 {
   font-size: 4.2rem;
@@ -27,15 +30,16 @@
   font-weight: 800;
 }
 .facebook-left p {
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 600;
   color: black;
 }
 .facebook-right {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  width: 100%;
+  max-width: 50%;
 }
 .facebook-right form {
   display: flex;
@@ -102,4 +106,84 @@
 .new-page a {
   text-decoration: none;
   color: black;
+}
+@media (max-width: 1024px) {
+  .facebook-wrapper {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+  .facebook-left {
+    width: 50%;
+    padding: 1rem;
+  }
+  .facebook-left p {
+    font-size: 1.25em;
+  }
+  .facebook-right {
+    max-width: 100%;
+  }
+  .facebook-right form {
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: 0px 0px 5px 1px #ccc;
+  }
+  .facebook-right input {
+    width: 100%;
+    padding: 1rem;
+    margin: 10px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 7px;
+    font-size: 1.25rem;
+  }
+  .novaconta .btn-novaconta {
+    width: 100%;
+  }
+  .new-page {
+    margin-top: 30px;
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .facebook-wrapper {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+  .facebook-left {
+    width: 70%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .facebook-left p {
+    font-size: 1.25em;
+  }
+  .facebook-right {
+    max-width: 100%;
+  }
+  .facebook-right form {
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: 0px 0px 5px 1px #ccc;
+  }
+  .facebook-right input {
+    width: 100%;
+    padding: 1rem;
+    margin: 10px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 7px;
+    font-size: 1.25rem;
+  }
+  .novaconta .btn-novaconta {
+    width: 100%;
+  }
+  .new-page {
+    margin-top: 30px;
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
 }
