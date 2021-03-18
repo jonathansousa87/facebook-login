@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +11,95 @@
   justify-content: center;
   margin: 0 auto;
   display: flex;
+  padding: 10rem;
+  background-color: #f0f2f5;
+  font-family: "Nunito Sans", sans-serif;
+}
+.facebook-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  padding: 0 5rem;
+}
+.facebook-left h1 {
+  font-size: 4.2rem;
+  color: royalblue;
+  font-weight: 800;
+}
+.facebook-left p {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: black;
+}
+.facebook-right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.facebook-right form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 1px #ccc;
+}
+.facebook-right input {
+  width: 100%;
+  padding: 1rem;
+  margin: 10px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 7px;
+  font-size: 1.25rem;
+}
+.facebook-right button {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 10px 0 0;
+  border: 1px solid #dddfe2;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #1877f2;
+  color: #fff;
+  cursor: pointer;
+}
+.facebook-link {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.facebook-link a {
+  text-decoration: none;
+  color: #1877f2;
+}
+
+.novaconta .btn-novaconta {
+  width: 50%;
+  text-align: center;
+  background-color: rgb(30, 170, 30);
+  padding: 1rem;
+  margin: 10px 0 0;
+  border: 1px solid #dddfe2;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.novaconta {
+  width: 100%;
+  align-items: center;
+  padding: 1rem 0;
+}
+.new-page {
+  margin-top: 30px;
+}
+.new-page a {
+  text-decoration: none;
+  color: black;
 }
